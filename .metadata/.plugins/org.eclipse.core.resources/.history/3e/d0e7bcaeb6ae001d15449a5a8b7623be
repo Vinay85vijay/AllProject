@@ -1,0 +1,16 @@
+package com.hello;
+
+public class RevLastWord {
+
+	public static void main(String[] args) {
+       String str = "abhay is a java Developer";
+      String[] split = str.split(" ");
+      String string = split.toString();
+      System.out.println(string);
+      
+	}
+     
+      
+	}
+
+

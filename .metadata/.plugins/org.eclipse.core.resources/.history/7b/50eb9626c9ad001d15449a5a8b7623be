@@ -1,0 +1,12 @@
+package encap;
+
+public class Bonus {
+	public static void main(String[] args) {
+		EMP b=new EMP(12,2000.2,"VINOD");
+		b
+		
+		
+		
+	}
+
+}

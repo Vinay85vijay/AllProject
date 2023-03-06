@@ -1,0 +1,21 @@
+
+public class Employee {
+
+	public static void main(String[] args) {
+		int id;
+		String name;
+		double sal;
+		
+		
+
+	}
+
+	/**
+	 * 
+	 */
+	public Employee() {
+		super();
+		
+	}
+
+}

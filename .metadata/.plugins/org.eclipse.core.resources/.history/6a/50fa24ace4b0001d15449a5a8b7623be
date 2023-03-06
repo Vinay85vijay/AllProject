@@ -1,0 +1,9 @@
+package com.hello.range;
+
+public class rangeTest {
+	@test
+	public void method() {
+		
+	}
+
+}

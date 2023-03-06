@@ -1,0 +1,23 @@
+package com.hello;
+
+public class secMx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+            int max=0,secMax=max;
+            int arr[]= {1,2,3,5,4,6,8,9};
+            for(int i=0;i<arr.length;i++) {
+            	if(max<arr[i]) {
+            		secMax=max;
+            		max=arr[i];
+            		
+            	}
+//            	if(secMax<arr[i] && arr[i]!=max) {
+//            		secMax=arr[i];
+//            	}
+            	
+            }
+            System.out.println(secMax);
+	}
+
+}

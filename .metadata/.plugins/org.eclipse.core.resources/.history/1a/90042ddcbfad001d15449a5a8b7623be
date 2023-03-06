@@ -1,0 +1,16 @@
+package com.hello;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class DupElements {
+
+	public static <K, V> void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+
+	}
+
+}

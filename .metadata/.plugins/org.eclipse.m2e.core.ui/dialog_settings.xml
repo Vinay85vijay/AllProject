@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\Admin\Downloads\swagger"/>
+			<item value="C:\Users\Admin\Downloads\sonarqube"/>
+			<item value="C:\Users\Admin\Downloads\notifications (1)"/>
+			<item value="C:\Users\Admin\Downloads\Resignation Mail"/>
+			<item value="C:\Users\Admin\Downloads\springboot-email-api"/>
+			<item value="C:\Users\Admin\Downloads\sendmail"/>
+			<item value="C:\Users\Admin\Downloads\Resignation-emailsender (1)"/>
+			<item value="C:\Users\Admin\Downloads\Resignation-emailsender"/>
+			<item value="C:\Users\Admin\Downloads\Resignation_form"/>
+			<item value="C:\Users\Admin\Downloads\Resignation_Email"/>
+			<item value="C:\Users\Admin\Downloads\Resignation_mail"/>
+			<item value="C:\Users\Admin\Downloads\Login-spring\Login-spring"/>
+			<item value="C:\Users\Admin\Downloads\email"/>
+			<item value="C:\Users\Admin\Downloads\resignation-letter"/>
+			<item value="C:\Users\Admin\Downloads\resignation-letter\resignation-letter"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\Admin\eclipse-workspace\WashingMachineFeatures\src\main\java\com\washingmachine\WashingMachineFeaturesApplication.java"/>
+			<item value="C:\Users\Admin\eclipse-workspace\WashingMachineFeatures\src\main\java\com\washingmachine\controller\MachineController.java"/>
+			<item value="C:\Users\Admin\Downloads\coronavirus-tracker\coronavirus-tracker"/>
+			<item value="C:\Users\Admin\Downloads\GameApp (1)\GameApp\src\main\java\com\gameApp\game\ContraGame.java"/>
+			<item value="C:\Users\Admin\eclipse-workspace\HelloWorld\src\com\hello\Hello.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.mirafra.email"/>
+		</list>
+		<list key="groupId">
+			<item value="com.mirafra.email"/>
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.mirafra.email"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="Washing-machine"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="836"/>
+		<item key="x" value="720"/>
+		<item key="y" value="0"/>
+	</section>
+</section>

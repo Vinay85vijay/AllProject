@@ -1,0 +1,17 @@
+
+¤
+java:S1130-"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(€«Ðõúÿÿÿÿ8Ç¶–´à0H´5RMINORZ
+CODE_SMELL
+}	java:S112-"FDefine and throw a dedicated exception instead of using a generic one.(€«Ðõúÿÿÿÿ8Ç¶–´à0H¶5RMAJORZ
+CODE_SMELL
+g	java:S125""<This block of commented-out lines of code should be removed.(¤ Š˜H·5RMAJORZ
+CODE_SMELL
+g	java:S125&"<This block of commented-out lines of code should be removed.(öÃ¯±H¹5RMAJORZ
+CODE_SMELL
+…	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©ŒÉšHº5RMINORZ
+CODE_SMELL
+g	java:S125/"<This block of commented-out lines of code should be removed.(Ÿ»é¢H»5RMAJORZ
+CODE_SMELL
+”
+java:S1488$"\Immediately return this expression instead of assigning it to the temporary variable "data".(ˆ«Û•ùÿÿÿÿ8ýì‡»à0H½5RMINORZ
+CODE_SMELL

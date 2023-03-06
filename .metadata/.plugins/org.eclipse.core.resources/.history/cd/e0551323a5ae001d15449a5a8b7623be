@@ -1,0 +1,21 @@
+package com.hello;
+
+public class ExecutionClass {  
+	public static void main(String[] args) {
+		HikeSal hikeSal = new HikeSal(2000, "Vinay");	
+		hikeSal.hikedEmployeeSal();
+	}}
+	class HikeSal{
+		int salary ;
+		String name;
+		public HikeSal(int salary, String name) {
+			this.salary = salary;
+			this.name = name;
+		}
+		public void hikedEmployeeSal() {
+			System.out.println("Employee Name : salary \n "+name+" :"+salary);
+			System.out.println("Employee Name : HikedSalary \n "+name+" :"+1.2*salary);		
+		}
+	}
+
+

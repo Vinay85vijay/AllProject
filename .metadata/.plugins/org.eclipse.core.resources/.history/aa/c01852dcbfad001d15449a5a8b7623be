@@ -1,0 +1,15 @@
+package com.hello;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class OnlySpclChars {
+
+	public static  void main(String[] args) {
+		
+	
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.hello;
+
+import java.util.Arrays;
+
+public class Test123 {
+	 static int element2;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int arr[]= {2, 5, 6, 11, 9, 13, 14, 12};
+		int element =9;
+		
+		Arrays.sort(arr);
+		for (int i : arr) {
+			if(element<(arr[i+1])) {
+				if(arr[i+1]%2==0) {
+				           
+				
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,10 @@
+1674466401631	Encapsulate field 'Position'
+1674467593573	Extract local variable 'name'
+1674467706587	Extract local variable 'empId'
+1674467715531	Extract local variable 'noticePeriod'
+1674467743037	Extract local variable 'position'
+1674467750438	Extract local variable 'reasons'
+1674472820521	Extract method 'UserInformation'
+1674477036945	Extract local variable 'userInformation'
+1674812725240	Delete element
+1674812729563	Delete element

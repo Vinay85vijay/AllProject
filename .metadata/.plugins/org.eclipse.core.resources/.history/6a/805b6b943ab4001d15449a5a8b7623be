@@ -1,0 +1,38 @@
+package com.hello;
+
+import java.util.Arrays;
+
+public class NextGreaterEvenNumber {
+
+	public static void main(String[] args) {
+		int arr[]= {2, 5, 6, 11, 9, 13, 14, 12};
+	int max=0;
+	int max2=0;
+		for(int i=0;i<arr.length;i++) {
+			for(int j=i+1;j<arr.length;j++) {
+				if(arr[i]%2==1) {
+					if(max<arr[i]) {
+						 max2 = max;
+						int k = arr[i];
+					}
+					
+				}
+				
+			}
+			
+		}
+		System.out.println(max2);
+		
+		
+		
+		
+				
+			}
+			
+		
+		
+		
+
+	}
+
+

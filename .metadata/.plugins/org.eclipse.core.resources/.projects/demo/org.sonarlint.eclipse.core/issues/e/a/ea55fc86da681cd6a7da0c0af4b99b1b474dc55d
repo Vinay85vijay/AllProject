@@ -1,0 +1,13 @@
+
+╗
+java:S1130"ЙRemove the declaration of thrown exception 'javax.mail.internet.AddressException' which is a subclass of 'javax.mail.MessagingException'.(╕ўли·    HЭ1RMINORZ
+CODE_SMELL
+Z
+java:S1172")Remove this unused method parameter "to".(╕ўли·    HЯ1RMAJORZ
+CODE_SMELL
+l	java:S125"<This block of commented-out lines of code should be removed.(б╣П╗■    Hб1RMAJORZ
+CODE_SMELL
+g	java:S125%"<This block of commented-out lines of code should be removed.(Ь╚З▐Hв1RMAJORZ
+CODE_SMELL
+g	java:S125)"<This block of commented-out lines of code should be removed.(╚№═СHд1RMAJORZ
+CODE_SMELL

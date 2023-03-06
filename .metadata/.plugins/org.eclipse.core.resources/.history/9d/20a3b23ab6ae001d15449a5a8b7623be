@@ -1,0 +1,14 @@
+package com.hello;
+
+public class RevLastWord {
+
+	public static void main(String[] args) {
+       String str = "abhay is a java Developer";
+      String[] split = str.split(str);
+      StringBuffer s = new StringBuffer();
+      int lastIndexOf = s.lastIndexOf(str);
+      System.out.println(lastIndexOf);
+      
+	}
+
+}

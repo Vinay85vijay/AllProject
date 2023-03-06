@@ -1,0 +1,20 @@
+package com.hello;
+
+import java.util.StringJoiner;
+
+public class RevLastWord {
+
+	public static void main(String[] args) {
+       String str = "abhay is a java Developer";
+       
+      StringJoiner join = new StringJoiner(",", "[,]", str);
+      System.out.println(join);
+     
+      
+      
+	}
+     
+      
+	}
+
+

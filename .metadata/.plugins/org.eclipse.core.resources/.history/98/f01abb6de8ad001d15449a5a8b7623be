@@ -1,0 +1,22 @@
+package com.hello;
+
+public class bonus {
+int id;
+double salary;
+ bonus(int id, double salary){
+	 this.id=id;
+	 this.salary=salary;
+ }
+
+}
+ public class bonus{
+	public static void main(String [] args) {
+		bonus emp=new bonus( 101, 1000);
+		bonus b=new bonus();
+		System.out.println(b.getbonus(emp.salary));
+		
+	}
+	public double getbonus(double salary) {
+	return salary*0.1;
+	}
+}

@@ -1,0 +1,19 @@
+package com.hello;
+
+import java.util.function.Predicate;
+
+public class funcPgm {
+
+	public static void main(String[] args) {
+		//predicate odd filter
+	Predicate<Integer> oddValue = i->(i%2==1);
+
+	}
+
+}
+//String str1= new String("Hello Java"); 
+//String str2= new String("Hello Java"); 
+//String str3= "Hello Java";
+// String str4= "Hello";
+// String str5="Hello"+" Java"; 
+String str6= str4+" Java";

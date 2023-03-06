@@ -1,0 +1,33 @@
+package com.hello;
+
+class AdjecentFrequence {
+
+	public static void consecStr(String str) {
+		int lenStr = str.length();
+
+		for (int i = 0; i < lenStr; i++) {
+
+			int curr_count = 1;
+
+			for (int j = i + 1; j < lenStr; j++) {
+
+				if (str.charAt(i) != str.charAt(j)) {
+					break;
+				}
+				curr_count++;
+
+				if (curr_count > 1) {
+					i++;
+				}
+			}
+
+			if (curr_count == 1 || curr_count > 1) {
+				System.out.print(str.charAt(i) + ": " + curr_count + "\n");
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		consecStr("Hellolllee");
+	}
+}

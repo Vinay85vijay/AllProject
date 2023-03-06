@@ -1,0 +1,22 @@
+package com.hello;
+
+public class RevLastWord {
+
+	public static void main(String[] args) {
+       String str = "abhay is a java Developer";
+      String[] split = str.split(" ");
+      String string = split.toString();
+      int indexOf = string.indexOf("Developer");
+      int indexOf2 = string.indexOf("abhay");
+     
+      for (String string1 : split) {
+    	  System.out.println(string1);
+	}
+      
+      
+	}
+     
+      
+	}
+
+

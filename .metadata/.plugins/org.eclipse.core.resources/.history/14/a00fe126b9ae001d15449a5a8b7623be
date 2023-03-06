@@ -1,0 +1,26 @@
+package com.hello;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.StringJoiner;
+
+public class RevLastWord {
+
+	public static void main(String[] args) {
+       String str = "abhay is a java Developer";
+       List< String> list = new ArrayList<>();
+       for (String string : list) {
+    	   list.add(str);
+		
+	}
+       System.out.println(list);
+      
+     
+      
+      
+	}
+     
+      
+	}
+
+

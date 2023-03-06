@@ -1,0 +1,12 @@
+
+
+java:S1104"TMake response a static final constant or non-public and provide accessors if needed.(˙ïÒUHï1RMINORZ
+CODE_SMELL
+∂
+java:S1130)"âRemove the declaration of thrown exception 'javax.mail.internet.AddressException' which is a subclass of 'javax.mail.MessagingException'.(Ä ê©Hñ1RMINORZ
+CODE_SMELL
+l	java:S125*"<This block of commented-out lines of code should be removed.(È≤ˇ‘˝ˇˇˇˇHò1RMAJORZ
+CODE_SMELL
+∂
+java:S11303"âRemove the declaration of thrown exception 'javax.mail.internet.AddressException' which is a subclass of 'javax.mail.MessagingException'.(°πÂπHô1RMINORZ
+CODE_SMELL

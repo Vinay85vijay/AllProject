@@ -1,0 +1,56 @@
+package com.washingmachine.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.washingmachine.FrontEndFeatures;
+import com.washingmachine.TopEndFeatures;
+import com.washingmachine.repo.FrontEndRepository;
+import com.washingmachine.repo.TopEndRepository;
+@RestController
+public class MachineController {
+	@Autowired
+	private  FrontEndRepository fRipo;
+	@Autowired
+	private  TopEndRepository tRipo;
+	@GetMapping("/home")
+	public String home() {
+		return "home";
+	}
+	@GetMapping("/top")
+	
+	public TopEndFeatures topEndF(TopEndFeatures topEndFeatures) {
+		 TopEndFeatures saveTopEndFeatures = tRipo.save(topEndFeatures);
+		 return saveTopEndFeatures;
+	}
+	@GetMapping("/front")
+	public FrontEndFeatures frontEndF( FrontEndFeatures frontEndFeatures) {
+		 FrontEndFeatures saveFront= fRipo.save(frontEndFeatures);
+		 return saveFront;
+		 
+	
+	}
+	@PostMapping("/Top")
+	public TopEndFeatures addTopEndF(  TopEndFeatures topEndFeatures) {
+		 TopEndFeatures addTop = tRipo.save(topEndFeatures);
+		 return addTop;
+	}
+	@PostMapping("/front")
+	public FrontEndFeatures addFrontEndF(  FrontEndFeatures frontEndFeatures) {
+		FrontEndFeatures addFront = fRipo.save(frontEndFeatures);
+		return addFront;
+	}
+
+	@DeleteMapping("/top/{U_id}")
+	public String deleteTop(@PathVariable Long U_id ) {
+		 tRipo.deleteById(U_id);
+		 return "deleted";
+		
+	}
+
+}

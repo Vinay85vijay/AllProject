@@ -1,0 +1,21 @@
+package com.hello;
+
+public class LeftRot {
+
+	public static void main(String[] args) {
+		int arr[]= {1,2,3,4,5};
+		int size = arr.length;
+		int first=0;
+		first=arr[0];
+		int n=3;
+		for(int i=1;i<n;i++) {
+			
+			arr[i]=arr[i+1];
+			arr[size-1]=first;
+			System.out.println(arr[i]);
+		}
+		
+
+	}
+
+}

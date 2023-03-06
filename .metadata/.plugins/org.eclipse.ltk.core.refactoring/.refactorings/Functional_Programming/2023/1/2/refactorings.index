@@ -1,0 +1,5 @@
+1673515120000	Extract local variable 'evenPredicate'
+1673515155925	Extract local variable 'mapper'
+1673515304482	Extract method 'extracted'
+1673517948419	Inline local variable 'list'
+1673518029969	Extract local variable 'of'

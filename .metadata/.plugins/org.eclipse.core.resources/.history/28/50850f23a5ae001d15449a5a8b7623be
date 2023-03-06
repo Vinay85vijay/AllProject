@@ -1,0 +1,37 @@
+package com.hello;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class IntoBin {
+
+	public static void main(String[] args) {
+		arrayAppand();
+       int n=128 ,rem=0;
+       String str="";
+       while(n!=0) {
+    	    rem= n%2;
+    	      str=str+rem; 
+    	      n=n/2;
+       }
+         
+       for(int i =str.length()-1;i>=0;i--)
+       System.out.print(str.charAt(i)+" ");
+      
+	}
+	 public static void arrayAppand(){
+  	   int arr[]= {1,2,4,5,6};
+  	   List<Integer> array = new ArrayList<>();
+  	   for(int i=0;i<arr.length;i++) {
+  		   array.add(arr[i]);
+  	   }
+  	   array.add(2, 3);
+  	   System.out.println(array);
+  	   System.out.println();
+//  	   for (Integer integer : array) {
+//		System.out.print(integer+" ");
+//	}
+     }
+
+}

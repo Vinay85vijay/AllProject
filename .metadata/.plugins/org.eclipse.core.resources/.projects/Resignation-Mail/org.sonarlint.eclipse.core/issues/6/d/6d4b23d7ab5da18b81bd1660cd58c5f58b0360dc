@@ -1,0 +1,6 @@
+
+Š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Äá”²ûÿÿÿÿH”.RMINORZ
+CODE_SMELL
+n
+java:S1128"BRemove this unused import 'jakarta.mail.internet.InternetAddress'.(Ê•¬¾H•.RMINORZ
+CODE_SMELL

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ResignationMailApplicationTests" project="Resignation-Mail" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.sendmail.Resignation.Mail.ResignationMailApplicationTests" time="0.043" displayname="ResignationMailApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.sendmail.Resignation.Mail.ResignationMailApplicationTests]">
+    <testcase name="contextLoads" classname="com.sendmail.Resignation.Mail.ResignationMailApplicationTests" time="0.043" displayname="contextLoads()" uniqueid="[engine:junit-jupiter]/[class:com.sendmail.Resignation.Mail.ResignationMailApplicationTests]/[method:contextLoads()]"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,29 @@
+package com.hello;
+
+import java.util.Arrays;
+
+class NextGreaterEvenNumber {
+int arr[];
+static int j;
+ static int store =0;
+	public static void main(String[] args) {
+		int arr[]= {2, 5, 6, 11, 9, 13, 14, 12};
+		int element =9;
+		
+		Arrays.sort(arr);
+		for (int i : arr) {
+		 if(element<i) {
+			 store=i;
+		 }
+		 
+		}
+		System.out.println(store);
+	
+		
+		
+		
+		
+
+	}
+
+}

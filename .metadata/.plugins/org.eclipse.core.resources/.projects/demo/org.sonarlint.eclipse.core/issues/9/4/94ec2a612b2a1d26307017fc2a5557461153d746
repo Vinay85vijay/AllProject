@@ -1,0 +1,32 @@
+
+•
+java:S1192."aDefine a constant instead of duplicating this literal "                        </td>\r
+" 3 times.(¤ã˜ûÿÿÿÿH¥1RCRITICALZ
+CODE_SMELL
+‘
+java:S1192/"]Define a constant instead of duplicating this literal "                    </tr>\r
+" 4 times.(Û†»şÿÿÿÿH©1RCRITICALZ
+CODE_SMELL
+
+java:S1192+"\Define a constant instead of duplicating this literal "                    <tr>\r
+" 4 times.(‰”ŸûÿÿÿÿH®1RCRITICALZ
+CODE_SMELL
+‰
+java:S1192&"UDefine a constant instead of duplicating this literal "            </td>\r
+" 3 times.(¤ã˜ûÿÿÿÿH³1RCRITICALZ
+CODE_SMELL
+…
+java:S1192'"QDefine a constant instead of duplicating this literal "        </tr>\r
+" 3 times.(Û†»şÿÿÿÿH·1RCRITICALZ
+CODE_SMELL
+„
+java:S1192!"PDefine a constant instead of duplicating this literal "        <tr>\r
+" 3 times.(‰”ŸûÿÿÿÿH»1RCRITICALZ
+CODE_SMELL
+
+java:S1192%"\Define a constant instead of duplicating this literal "                </table>\r
+" 3 times.(Ïœˆ‰ùÿÿÿÿH¿1RCRITICALZ
+CODE_SMELL
+‘
+java:S1488"`Immediately return this expression instead of assigning it to the temporary variable "template".(êŞ¶ÂıÿÿÿÿHÃ1RMINORZ
+CODE_SMELL

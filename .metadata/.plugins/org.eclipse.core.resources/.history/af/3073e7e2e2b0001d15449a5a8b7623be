@@ -1,0 +1,20 @@
+package com.hello;
+import java.util.Scanner;
+public class Range { 
+ public static void main(String[] args) {	  
+	 Scanner sc = new Scanner(System.in);
+	int startingNumber = sc.nextInt();
+	 Scanner s = new Scanner(System.in);
+	int endingNumber = s.nextInt();
+	int count=0;
+	 for(int i =startingNumber;i<=endingNumber;i++) {	 
+		  if(i%11==0) {
+			  count++;
+		  }
+ }
+	 System.out.println(count);
+}}
+
+
+
+

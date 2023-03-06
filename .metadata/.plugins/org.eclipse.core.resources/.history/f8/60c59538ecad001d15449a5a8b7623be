@@ -1,0 +1,22 @@
+package com.hello;
+
+import java.util.List;
+
+public class Func_prog {
+
+	public static void main(String[] args) {
+		List<String>list= List.of("Apple","Banana","Cat","Dog");
+	//	printWithFp(list);
+		printWithFp1(list);
+		}
+
+	private static void printWithFp(List<String> list) {
+		list.stream().forEach(e->System.out.println(e));
+	}
+	private static void printWithFp1(List<String> list) {
+		list.stream().filter(element->element.endsWith("at"))
+		
+		.forEach(e->System.out.println(e));
+	}
+	
+}

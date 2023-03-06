@@ -1,0 +1,24 @@
+package com.hello;
+
+public class DoubleMissingEle {
+
+	public static void main(String[] args) {
+         int arr[]= {32,33,34,37,38};
+         int end=0;
+         int start=0;
+         for(int i=0;i<arr.length-1;i++) {
+        	 if(!(arr[i]+1==arr[i+1])) {
+        		start= arr[i];
+        		end= arr[i+1];
+        	 }
+       	 
+         }
+         for(int i=start+1;i<end;i++) {
+        	 System.out.println(i);
+         }
+	}
+	
+
+}
+
+

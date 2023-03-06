@@ -1,0 +1,14 @@
+package com.hello;
+
+class Abc extends Thread{
+	public void run() {
+		System.out.println("Apoorva");
+	}
+}
+class expThread {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

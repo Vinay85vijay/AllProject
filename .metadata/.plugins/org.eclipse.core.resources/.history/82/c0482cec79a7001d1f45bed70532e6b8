@@ -1,0 +1,5 @@
+package com.simple.swagger.controller;
+
+public class MyController {
+
+}

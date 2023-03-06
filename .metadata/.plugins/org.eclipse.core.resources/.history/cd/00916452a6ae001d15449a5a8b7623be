@@ -1,0 +1,24 @@
+package com.sendmail.Resignation.Mail;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.sendmail.Resignation.Mail.service.EmailServiceImplTest;
+
+import jakarta.mail.MessagingException;
+
+@SpringBootTest
+class ResignationMailApplicationTests {
+@Mock
+	EmailServiceImplTest emailServiceImplTest;
+	@Test
+	void contextLoads() throws MessagingException, Exception {
+		emailServiceImplTest.testSendEmail();
+		emailServiceImplTest.testSendEmailWithException();
+		emailServiceImplTest.testSendEmailWithInvalidRecipient();
+		
+	}
+    
+}

@@ -1,0 +1,38 @@
+import static org.mockito.Mockito.mock;
+
+import org.junit.Before;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.springframework.mail.javamail.JavaMailSender;
+
+import jakarta.mail.internet.MimeMessage;
+
+public class EmailServiceImplTest {
+    private EmailServiceImpl emailServiceImpl;
+
+    @Mock
+    private JavaMailSender javaMailSender;
+
+
+    @SuppressWarnings("deprecation")
+    @Before
+    public void before() {
+    	MimeMessage message = javaMailSender.createMimeMessage();
+        javaMailSender = mock(JavaMailSender.class);
+        when(javaMailSender.createMimeMessage()).thenReturn(message);
+        emailServiceImpl =  new EmailService(javaMailSender);
+    }
+
+    @Test
+    public void sendMailTest() throws MessagingException, IOException {
+        String subject = "Some subject";
+        String body = "Some contents.";
+        String recipient = "test@test.com";
+
+        mailService.sendMail(subject, body, recipient);
+        List<Message> inbox = Mailbox.get(recipient);
+        assertTrue(inbox.size() == 1);
+        assertEquals(subject, inbox.get(0).getSubject());
+        assertEquals(body, inbox.get(0).getContent());
+    }
+}

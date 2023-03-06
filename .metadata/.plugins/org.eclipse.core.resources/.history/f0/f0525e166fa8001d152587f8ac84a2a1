@@ -1,0 +1,22 @@
+package com.hello;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
+public class UseStream {
+	public static void main(String[] args) {
+		
+	
+	List<Integer> number = Arrays.asList(2,3,4,5);
+	List even =  (List) number.stream().filter(x->x%2==0).collect(Collectors.toList());
+  System.out.println(even);
+   
+   List<String> s = Arrays.asList("vinay","manoj","gb","aliya");
+ //  int ans = s.stream() 
+  // System.out.println(ans);
+  
+	}
+}

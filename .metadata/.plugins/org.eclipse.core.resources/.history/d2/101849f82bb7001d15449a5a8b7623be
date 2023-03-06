@@ -1,0 +1,26 @@
+package com.hello;
+
+import java.util.Arrays;
+
+public class Test123 {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr = {5, 7, 9, 11, 12, 14, 15};
+		int i = 0;
+		while(arr[i] != 9) { // find the index of 9
+		    i++;
+		}
+		i++; // move to the next element after 9
+		while(i < arr.length && arr[i] % 2 != 0) { // find the next even number
+		    i++;
+		}
+		if(i >= arr.length) {
+		    System.out.println("There is no even number after 9 in the array.");
+		} else {
+		    int nextEven = arr[i];
+		    System.out.println("The next even number after 9 is: " + nextEven);
+		}
+
+
+}

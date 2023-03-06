@@ -1,0 +1,29 @@
+package com.hello;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class OnlySpclChars {
+
+	public static  void main(String[] args) {
+		String str = "@#$%";
+		onlyChars(str);
+	
+
+	}
+	public static  void onlyChars(String str) {
+		String regex = "[^a-zA-Z0-9]+";
+		Pattern p = Pattern.compile(regex);
+		if(str==null) {
+			System.out.println("no");
+		}
+		Matcher m = p.matcher(str);
+		if(m.matches()) {
+			System.out.println("yes");
+		}
+		else 
+			System.out.println("no");
+		
+	}
+
+}

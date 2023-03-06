@@ -1,0 +1,199 @@
+package com.sendmail.Resignation.Mail.service;
+//
+//import static org.junit.Assert.assertEquals;
+//import static org.mockito.Mockito.mock;
+//import static org.mockito.Mockito.when;
+//
+//import java.io.IOException;
+//
+//import org.junit.Before;
+//import org.junit.Test;
+//import org.junit.jupiter.api.extension.ExtendWith;
+//import org.mockito.InjectMocks;
+//import org.mockito.Mock;
+//import org.mockito.Mockito;
+//import org.mockito.MockitoAnnotations;
+//import org.mockito.junit.jupiter.MockitoExtension;
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.mail.javamail.JavaMailSender;
+//import org.springframework.mail.javamail.MimeMessageHelper;
+//
+//import com.sendmail.Resignation.Mail.dto.EmailRequestDto;
+//import com.sendmail.Resignation.Mail.dto.UserDetails;
+//import com.sendmail.Resignation.Mail.response.ResponseEmail;
+//
+//import jakarta.mail.MessagingException;
+//import jakarta.mail.internet.InternetAddress;
+//import jakarta.mail.internet.MimeMessage;
+//
+//@ExtendWith(value = { MockitoExtension.class})
+//public class EmailServiceImplTest {
+//	@InjectMocks
+//    private EmailServiceImpl emailServiceImpl;
+//
+//    @Mock
+//    private JavaMailSender javaMailSender;
+//    
+//    @Mock
+//    EmailRequestDto emailDto;
+//    @Mock
+//    ResponseEmail responseEmail;
+//    
+// private UserDetails userDetails;
+//
+//    @SuppressWarnings("deprecation")
+//    @Before
+//    public void before() {
+//    	MockitoAnnotations.openMocks(this);
+//    	
+//    	MimeMessage message = javaMailSender.createMimeMessage();
+//        javaMailSender = mock(JavaMailSender.class);
+//        when(javaMailSender.createMimeMessage()).thenReturn(message);
+//        emailServiceImpl =  new EmailServiceImpl();
+//    }
+//
+//    @Test
+//    public void sendMailTest() throws MessagingException, IOException {
+//    	 
+//         	
+//         	userDetails.setEmpId(123);
+//         	userDetails.setName("vinay");
+//         	userDetails.setNoticePeriod("20days");
+//         	userDetails.setPosition("SWE");
+//         	userDetails.setReasons("home sick");
+//         	
+//         	
+//        	MimeMessage message = javaMailSender.createMimeMessage();
+//			MimeMessageHelper helper = new MimeMessageHelper(message, true,"utf-8"); 
+//			helper.setFrom( new InternetAddress("Employee <noreply@springboot.com>"));
+//			helper.setTo("vinaykumar08civil@gmail.com");
+//			//helper.set
+//			helper.setSubject("resign");
+//			helper.setText("testing the service");
+//			
+//			helper.setBcc("vinay@mirafra.com");
+//			helper.setCc("vvinnu48@gmail.com");
+//			javaMailSender.send(message);
+//                assertEquals(message, helper);
+//        
+//        
+//       
+//    }
+//}
+ 
+	 import org.junit.Test;
+	 import org.junit.runner.RunWith;
+	 import org.mockito.InjectMocks;
+	 import org.mockito.Mock;
+	 import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
+
+import com.sendmail.Resignation.Mail.dto.EmailRequestDto;
+import com.sendmail.Resignation.Mail.dto.UserDetails;
+
+import jakarta.mail.MessagingException;
+import jakarta.mail.internet.InternetAddress;
+import jakarta.mail.internet.MimeMessage;
+
+import static org.junit.Assert.fail;
+import static org.mockito.Mockito.*;
+
+	 
+	 public class EmailServiceImplTest {
+
+	     @Mock
+	     private EmailService emailSender;
+	    @Mock
+	    JavaMailSender mailsender;
+
+	     @InjectMocks
+	     private EmailServiceImpl emailService;
+	     @Mock
+	     UserDetails userDetails;
+	     @Mock
+	     EmailRequestDto emailDto;
+
+	     @Test
+	     public void testSendEmail() throws MessagingException,Exception {
+	    		userDetails.setEmpId(123);
+	         	userDetails.setName("vinay");
+	         	userDetails.setNoticePeriod("20days");
+	         	userDetails.setPosition("SWE");
+	         	userDetails.setReasons("home sick");
+	         	
+	         	MimeMessage message = mailsender.createMimeMessage();
+				MimeMessageHelper helper = new MimeMessageHelper(message, true,"utf-8"); 
+				helper.setFrom( new InternetAddress("Employee <noreply@springboot.com>"));
+				helper.setTo("vinaykumar08civil@gmail.com");
+				//helper.set
+				helper.setSubject("resign");
+				helper.setText("testing the service");
+				
+				helper.setBcc("vinay@mirafra.com");
+				helper.setCc("vvinnu48@gmail.com");
+
+	         emailSender.sendEmailWithAttachment(emailDto, userDetails);
+
+	         verify(emailSender).sendEmailWithAttachment(eq(emailDto), eq(userDetails));
+	     }
+
+	     @Test
+	     public void testSendEmailWithInvalidRecipient() throws MessagingException , Exception {
+	         	userDetails.setEmpId(123);
+	         	userDetails.setName("vinay");
+	         	userDetails.setNoticePeriod("20days");
+	         	userDetails.setPosition("SWE");
+	         	userDetails.setReasons("home sick");
+	         	
+	        	MimeMessage message = mailsender.createMimeMessage();
+				MimeMessageHelper helper = new MimeMessageHelper(message, true,"utf-8"); 
+				helper.setFrom( new InternetAddress("Employee <noreply@springboot.com>"));
+				helper.setTo("vinaykumar08civil@gmail.com");
+				//helper.set
+				helper.setSubject("resign");
+				helper.setText("testing the service");
+				
+			
+
+
+	         emailService.sendEmailWithAttachment(emailDto, userDetails);
+
+	         verify(emailSender, never()).sendEmailWithAttachment(emailDto, userDetails);
+	     }
+
+	     @Test
+	     public void testSendEmailWithException() throws MessagingException,Exception {
+	    		userDetails.setEmpId(123);
+	         	userDetails.setName("vinay");
+	         	userDetails.setNoticePeriod("20days");
+	         	userDetails.setPosition("SWE");
+	         	userDetails.setReasons("home sick");
+	         	MimeMessage message = mailsender.createMimeMessage();
+				MimeMessageHelper helper = new MimeMessageHelper(message, true,"utf-8"); 
+				helper.setFrom( new InternetAddress("Employee <noreply@springboot.com>"));
+				helper.setTo("vinaykumar08civil@gmail.com");
+				//helper.set
+				helper.setSubject("resign");
+				helper.setText("testing the service");
+				emailService.sendEmailWithAttachment(emailDto, userDetails);
+
+	         doThrow(new RuntimeException("Email not sent")).when(emailSender).sendEmailWithAttachment(eq(emailDto), eq(userDetails));
+
+	         try {
+	             emailService.sendEmailWithAttachment(emailDto, userDetails);
+	             fail("Expected RuntimeException to be thrown");
+	         } catch (RuntimeException e) {
+	             // expected exception
+	         }
+
+	         verify(emailSender).sendEmailWithAttachment(eq(emailDto), eq(userDetails));
+	     }
+	 }
+	 
+	 
+	 
+	 
+	 
+ 
+ 

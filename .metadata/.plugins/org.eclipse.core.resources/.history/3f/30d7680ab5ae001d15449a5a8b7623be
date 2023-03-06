@@ -1,0 +1,11 @@
+package com.hello;
+
+public class RevLastWord {
+
+	public static void main(String[] args) {
+       String str = "abhay is a java Developer";
+       String replaceAll = str.replaceAll("abhay", "Developer");
+       System.out.println(replaceAll);
+	}
+
+}
